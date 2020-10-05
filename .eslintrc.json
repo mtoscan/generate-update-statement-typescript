@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard"
+  ],
+  "env": {},
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+      ".ts"
+    ]
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@src", "./src"],
+          ["@tests", "./tests"],
+          ["@queries", "./queries"]
+        ],
+        "extensions": [
+          ".ts",
+          ".js"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
