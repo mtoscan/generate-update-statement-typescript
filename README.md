@@ -1,8 +1,7 @@
 # Serverless Node.js generateUpdateStatement in TypeScript
 
-For this take home project I used a different node starter. This uses Serverless, node.js and TypeScript.
-Because the API is used internally, there is no need to validate tokens, or make a login or signup endpoint. 
-So I choose this [starter](https://github.com/AnomalyInnovations/serverless-nodejs-starter) to show how we can implement Typescript and OOP in a lambda function with serverless. This API could be deployed in AWS with a proper configuration and used as a service.
+For this take home project I used a different node starter. This uses Serverless, node.js and TypeScript. 
+I choose this [starter](https://github.com/AnomalyInnovations/serverless-nodejs-starter) to show how we can implement Typescript and OOP in a lambda function with serverless. This API could be deployed in AWS with a proper configuration and used as a service.
 
 ### Requirements
 
@@ -44,13 +43,13 @@ $ serverless offline start
 
 ### Running Tests
 
-Run your tests using
+Run tests using
 
 ``` bash
 $ npm test
 ```
 
-I'm using Jest to run the tests. You can read more about setting up your tests [here](https://facebook.github.io/jest/docs/en/getting-started.html#content).
+I'm using Jest to run the tests. You can read more about setting up tests [here](https://facebook.github.io/jest/docs/en/getting-started.html#content).
 
 
 ### List of changes or Improvements pending
