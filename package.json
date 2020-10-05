@@ -1,5 +1,5 @@
 {
-  "name": "generate-update",
+  "name": "generate-update-statement",
   "version": "2.2.0",
   "description": "A Node.js starter for Serverless Framework with ES6 and TypeScript support",
   "main": "handler.js",
@@ -7,10 +7,9 @@
     "test": "serverless-bundle test"
   },
   "author": "",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
+    "url": "https://github.com/mtoscan/generate-update-statement-typescript"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.63",
@@ -18,11 +17,6 @@
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "@typescript-eslint/parser": "^4.3.0",
     "eslint": "^7.10.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.8.0",
-    "eslint-plugin-module-resolver": "^0.16.0",
     "serverless-bundle": "2.0.0",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.3.3",
