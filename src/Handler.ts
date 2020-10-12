@@ -12,7 +12,7 @@ const DELETE_KEY = '_delete';
 const NO_INDEX = '-1';
 
 class Handler {
-  private document : Record<string, any>;
+  private document: Record<string, any>;
 
   constructor() {
     this.document = {};
@@ -58,7 +58,8 @@ class Handler {
             // Add Statement
             const newPath = [path].filter(Boolean).join(separator);
             return { ...acc, [Action.ADD]: { [newPath]: [object[key]] } };
-          } if (this.hasDeleteKey(object[key])) {
+          }
+          if (this.hasDeleteKey(object[key])) {
             // delete Statement
             const newPath = [path, index].filter(Boolean).join(separator);
             return { ...acc, [Action.DELETE]: { [newPath]: object[key][DELETE_KEY] } };
